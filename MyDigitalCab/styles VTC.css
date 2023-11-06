@@ -1,0 +1,366 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+    
+}
+
+header {
+    height: 37vh;
+    margin-bottom: 1vh;
+}
+
+.Connect:hover{
+    text-decoration: underline;
+}
+
+.LogoHeader {
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0.5%;
+}
+
+.BackgroundTop {
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border-bottom: 3px solid #FFFFFF;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.FondLogo {
+    background-color: white;
+    width: 29vh;
+    height: 29vh;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1vh;
+    z-index: 2;
+}
+
+.FondMiddleLogo {
+    background: linear-gradient(90deg, #807CDB 0%, #8F6AE1 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    border-width: 2px;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2.6vh;
+    z-index: 1;  
+}
+
+.FondOutsideLogo {
+    background-color: white;
+    width: 35.6vh;
+    height: 35.6vh;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -13vh;
+    z-index: 0;  
+}
+
+.FondTop {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+header a p {
+    padding-right: 2%;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 115%;
+    z-index: 50;
+    justify-content: flex-end;
+}
+
+/* ↑ code header ↑ */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 10.5vh;
+    padding: 0;
+}
+
+nav ul li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.firstHalf {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.secondHalf {
+    justify-content: space-around;
+    width: 50%;
+    display: flex;
+}
+
+.space {
+    height: 0vh;
+    width: 35vh;
+    background-color: transparent;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+.TraitSéparation {
+    width: 100%;
+    height: 0.5vh;
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    position: absolute;
+    top: 20vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ↑ code navigation ↑ */
+
+main p {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+.premierTiers {
+    padding: 5vh;
+    padding-top: 0;
+}
+
+.premierTiers p:nth-child(1) {
+    text-align: start;
+}
+
+.premierTiers p:nth-child(2) {
+    text-align: end;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+}
+
+.BoutonRéservation {
+    width: 60%;
+    background: linear-gradient(90deg, #BF1CF5 0%, #25B9C5 100%);
+    height: 10vh;
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.BoutonRéservation p {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.secondTiers {
+    background-color: #CCAEF3;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondTiers p:first-child {
+    width: 700px;
+}
+
+.secondTiers p:nth-child(2) {
+    width: 600px;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.BoutonTarif {
+    width: 60%;
+    background: linear-gradient(90deg, #BF1CF5 0%, #25B9C5 100%);
+    height: 10vh;
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.BoutonTarif p {
+    font-size: 40px;
+}
+
+.dernierTiers {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    margin-left: 22%;
+    flex-direction: column;
+}
+
+.dernierTiers p:first-child {
+    text-align: start;
+}
+
+.Acomptext p {
+    text-align: justify-all;
+    font-size: 25px; 
+    margin-right: 40vh; 
+}  
+
+.descDS {
+    width: 100%;
+}
+
+
+.Voitures{
+    width: 100%;
+    height: auto;
+    display: flex ;
+    padding: 5vh; 
+    margin-right: auto;
+}
+
+/* ↓ code footer ↓ */
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    border-top: solid 3px white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.infoscontact p {
+    margin: 0;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+footer p,i {
+    color: white;
+    text-align: center;
+}
+
+.Icons {
+    font-size: 5vh;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    padding: 1%;
+    border: 0;
+}
+
+button {
+    cursor: pointer;
+}

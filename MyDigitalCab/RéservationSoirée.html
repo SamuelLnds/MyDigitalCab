@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesforms.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>MDC Réserver</title>
+</head>
+<body>
+    <header>
+        <a href=".\index.html"><img src=".\Logo MDC.png" class="LogoHeader"></a>
+        <div class="BackgroundTop">
+            <a href=".\Inscription.html"><p>Se connecter</p></a>
+        </div>
+        <div class="FondLogo"></div>
+        <div class="FondMiddleLogo"></div>
+        <div class="FondOutsideLogo"></div>
+    </header>
+    <nav>
+        <div class="MenuNav">
+            <ul>
+                <div class="firstHalf">
+                    <li><a href=".\accueil.html">Accueil</a></li>
+                    <li><a href="RéservationSoirée.html">Réservation</a></li>
+                </div>
+                <div class="space"></div>
+                <div class="secondHalf">
+                    <li><a href="Tarifs.html">Tarifs</a></li>
+                    <li><a href="Quisommesnous.html">Qui sommes-nous ?</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="TraitSéparation"></div>
+    </nav>
+    <main>
+        <div class="formsContain">
+            <form action="" method="post" class="formsRéserv">
+                <label for="Nom">Nom</label>
+                <input type="text" name="Nom" id="Nom" required placeholder="Votre nom de famille">
+                <label for="Prénom">Prénom</label>
+                <input type="text" name="Prénom" id="Prénom" required placeholder="Votre prénom">
+                <label for="adressa">Adresse de départ</label>
+                <input type="text" name="adressa" id="adressa" required placeholder="L'adresse de départ">
+                <label for="adressb">Adresse d'arrivée</label>
+                <input type="text" name="adressb" id="adressb" required placeholder="L'adresse d'arrivée">
+                <div id="dateheure">
+                    <fieldset>
+                        <legend>Date et heure de prise en charge</legend>
+                        <input type="date" name="date" id="date" required>
+                        <input type="time" name="heure" id="heure" required>
+                    </fieldset>
+                </div>
+                <div class="details">
+                    <fieldset class="HouF">
+                        <legend>Vous souhaitez être conduit par...</legend>
+                        <div class="conducGenre">
+                        <input type="radio" name="conducteurGenre" id="conducteurH">
+                        <label for="conducteurH">Un homme</label>
+                        <input type="radio" name="conducteurGenre" id="conducteurF">
+                        <label for="conducteurF">Une femme</label>
+                        <input type="radio" name="conducteurGenre" id="conducteurNA">
+                        <label for="conducteurNA">Je n'ai pas de préférence</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="dtls">
+                <label for="accom">Besoin d'un accompagnement :</label>
+                    <input type="checkbox" name="accom" id="accom">
+                </div>
+                <button>Valider</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="col1">
+            <p>Nous contacter :</p>
+            <div class="Icons">
+                <a href=""><i class="uil uil-instagram"></i></a>
+                <a href=""><i class="uil uil-linkedin"></i></a>
+                <a href=""><i class="uil uil-facebook"></i></a>
+                <a href=""><i class="uil uil-envelope-alt"></i></a>
+                <a href=""><i class="uil uil-twitter"></i></a>
+            </div>
+            <div class="infos contact">
+            <a href="Contact.html"><p>Formulaire de contact</p></a>
+            <p>Tel : 01 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="col2">
+             <p>S'abonner à notre newsletter</p>
+             <form action="" method="post">
+                <input type="email" id="courriel" name="mail" size="40" required placeholder="email@adresse.com"> <br>
+                <button>S'inscrire</button>
+             </form>
+        </div>
+        <div class="col3">
+            <a href="mentions légales.html"><p>Mentions légales</p></a>
+            <a href="Politique de confidencialité.html"><p>Politique de confidentialité</p></a>
+            <p>© 2022 - MyDigitalCab.fr </p>
+        </div>
+    </footer>
+</body>
+</html>

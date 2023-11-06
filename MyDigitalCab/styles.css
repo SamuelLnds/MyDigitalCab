@@ -1,0 +1,285 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    height: 9vh;
+    z-index: -5;
+}
+
+.LogoHeader {
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0.5%;
+}
+
+.BackgroundTop {
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border-bottom: 3px solid #FFFFFF;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.FondLogo {
+    background-color: white;
+    width: 29vh;
+    height: 29vh;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1vh;
+    z-index: 6;
+}
+
+.FondMiddleLogo {
+    background: linear-gradient(90deg, #807CDB 0%, #8F6AE1 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    border-width: 2px;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2.6vh;
+    z-index: 5;  
+}
+
+.FondOutsideLogo {
+    background-color: white;
+    width: 35.6vh;
+    height: 35.6vh;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -13vh;
+    z-index: 4;  
+}
+
+.FondTop {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+header a p {
+    padding-right: 2%;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 3vh;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 2vh;
+    z-index: 50;
+    justify-content: flex-end;
+}
+
+/* ↑ code header ↑ */
+
+.Mapping a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 6vh;
+    text-align: center;
+    margin-top: auto;
+}
+
+main {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    background-image: url(Fondimages.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+}
+
+main img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 188vh;
+}
+
+.Mapping {
+    display: flex;
+    position: static;
+    justify-content: space-around;
+}
+
+.MapHandicap {
+    width: 89vh;
+    height: 95vh;
+    opacity: 0;
+    z-index: 2;
+    position: relative;
+    right: 3px;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    transition: all 1s;
+}
+
+.MapSoirée {
+    width: 89vh;
+    height: 95vh;
+    opacity: 0;
+    z-index: 2;
+    position: relative;
+    left: 3px;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    transition: all 1s;
+}
+
+.MapHandicap:hover {
+    background-color: rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.MapSoirée:hover {
+    background-color: rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.MapVTC {
+    position: absolute;
+            left: 29.2%;
+            top: 67.5%;
+            height: 43vh;
+            width: 86vh;
+            border-radius: 900px 900px 0 0;
+            background-color: black;
+    opacity: 0;
+    z-index: 3;
+    padding: 5px;
+    transition: all 1s;
+}
+
+.MapVTC p {
+    margin-top: 24vh;
+}
+
+.MapVTC:hover {
+    background-color: rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* ↓ code footer ↓ */
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    border-top: solid 3px white;
+    position: relative;
+    z-index: 3;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.infoscontact p {
+    margin: 0;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+footer p,i {
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 2vh;
+}
+
+.Icons {
+    font-size: 5vh;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    padding: 1%;
+    border: 0;
+    width: 50vh;
+    height: 3.5vh;
+}
+
+button {
+    cursor: pointer;
+    height: 3vh;
+    width: 10vh;
+}

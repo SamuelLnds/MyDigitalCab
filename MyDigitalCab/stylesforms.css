@@ -1,0 +1,445 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(Fond.png);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+header {
+    height: 37vh;
+    margin-bottom: 1vh;
+    background-color: transparent;
+}
+
+.LogoHeader {
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0.5%;
+}
+
+.BackgroundTop {
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border-bottom: 3px solid #FFFFFF;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.FondLogo {
+    background-color: white;
+    width: 29vh;
+    height: 29vh;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1vh;
+    z-index: 2;
+}
+
+.FondMiddleLogo {
+    background: linear-gradient(90deg, #807CDB 0%, #8F6AE1 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    border-width: 2px;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2.6vh;
+    z-index: 1;  
+}
+
+.FondOutsideLogo {
+    background-color: white;
+    width: 35.6vh;
+    height: 35.6vh;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -13vh;
+    z-index: 0;  
+}
+
+.FondTop {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+header a p {
+    padding-right: 2%;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 115%;
+    z-index: 50;
+    justify-content: flex-end;
+}
+
+/* Header ^ */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 10.5vh;
+    padding: 0;
+}
+
+nav ul li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.firstHalf {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.secondHalf {
+    justify-content: space-around;
+    width: 50%;
+    display: flex;
+}
+
+.space {
+    height: 0vh;
+    width: 35vh;
+    background-color: transparent;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+.TraitSéparation {
+    width: 100%;
+    height: 0.5vh;
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    position: absolute;
+    top: 20vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* nav ^ */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main p, main label, main button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.formsContain {
+    background-color: #E8E8E8;
+    border-radius: 25px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh;
+    margin-bottom: 12vh;
+    border: 10px solid;
+    border-image: linear-gradient(90deg, #25B9C5, #BF1CF5) 1;
+    border-radius: 30px;
+}
+
+.formsContain div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: baseline;
+    gap: 2vh;
+    margin: 2vh 0 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main input {
+    width: 40%;
+}
+
+main button {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #BF1CF5 0%, #25B9C5 100%);
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    margin-top: 2vh;
+}
+
+.Message {
+    display: flex;
+    flex-direction: column;
+}
+
+label#msg {
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+#msgg {
+    margin-left: 100px;
+}
+
+textarea {
+	min-width: 930px;
+	min-height: 630px;
+	resize: none;
+    align-self: center;
+    border-radius: 15px;
+    padding: 15px;
+    border: none;
+    background-image: url(Monsieur.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 500px;
+}
+
+textarea::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.formsRéserv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formsRéserv label {
+    align-self: flex-start;
+    margin-left: 12.5%;
+    padding-bottom: 15px;
+}
+
+.formsRéserv input {
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+#dateheure {
+    width: 75%;
+    display: flex;
+}
+
+#dateheure input {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.details {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.details label {
+    width: 50%;
+    padding-bottom: 0;
+    margin-left: 0;
+    display: inline;
+}
+
+.details input {
+    width: 50%;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.dtls {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.dtls label {
+    width: 50%;
+    padding-bottom: 0;
+    margin-left: 0;
+    display: inline;
+}
+
+.dtls input {
+    width: 50%;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.dateheure {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+legend {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+
+.HouF {
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    align-self: center;
+}
+
+.HouF legend {
+    margin-left: 12.5%;
+}
+
+.HouF input {
+    width: 10%;
+    align-self: center;
+}
+
+.HouF label {
+    display: flex;
+    align-self: center;
+}
+
+.conducGenre {
+    width: 75%;
+    justify-content: center;
+}
+
+em {
+    opacity: 0;
+}
+
+/* footer v */
+
+footer {
+    display: flex;
+    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+footer p,i {
+    color: white;
+    text-align: center;
+}
+
+.Icons {
+    font-size: 5vh;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    padding: 1%;
+    border: 0;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,404 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+}
+
+header {
+    height: 37vh;
+    margin-bottom: 1vh;
+}
+
+.LogoHeader {
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0.5%;
+}
+
+.BackgroundTop {
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border-bottom: 3px solid #FFFFFF;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.FondLogo {
+    background-color: white;
+    width: 29vh;
+    height: 29vh;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1vh;
+    z-index: 2;
+}
+
+.FondMiddleLogo {
+    background: linear-gradient(90deg, #807CDB 0%, #8F6AE1 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    border-width: 2px;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2.6vh;
+    z-index: 1;  
+}
+
+.FondOutsideLogo {
+    background-color: white;
+    width: 35.6vh;
+    height: 35.6vh;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -13vh;
+    z-index: 0;  
+}
+
+.FondTop {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+header a p {
+    padding-right: 2%;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 115%;
+    z-index: 50;
+    justify-content: flex-end;
+}
+
+/* ↑ code header ↑ */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 10.5vh;
+    padding: 0;
+}
+
+nav ul li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.firstHalf {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.secondHalf {
+    justify-content: space-around;
+    width: 50%;
+    display: flex;
+}
+
+.space {
+    height: 0vh;
+    width: 35vh;
+    background-color: transparent;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+.TraitSéparation {
+    width: 100%;
+    height: 0.5vh;
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    position: absolute;
+    top: 20vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ↑ code navigation ↑ */
+
+main p, main h1, main h2 {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+main h1 {
+    margin-bottom: 5vh;
+}
+
+.tarifBox {
+    border: 10px solid;
+    border-image: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%) 1;
+    background: #E8E8E8;
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.tarifBox>div p {
+    font-size: 1.56em;
+}
+
+.tarifBox>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 0% 2%;
+}
+
+.dot {
+    background-color:#25B9C5;
+    border: none;
+    border-radius: 200px;
+    width: 15px;
+    height: 15px;
+}
+
+.dash {
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%);
+    border: none;
+    width: 75vh;
+    height: 5px;
+}
+
+.colB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.colA {
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.colC {
+    align-self: center;
+}
+
+em {
+    opacity: 0;
+}
+
+.QuiNousSommes>div>h2 {
+    background: linear-gradient(90deg, #25B9C5 0%, #BF1CF5 100%);
+    padding: 1vh 5vh 1vh 10vh;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    width: 85%;
+}
+
+.QuiNousSommes h2 {
+    color: white;
+    text-align: start;
+}
+
+.QuiNousSommes p {
+    margin: 2vh 0 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    width: 75%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: justify;
+}
+
+.Nouscontent {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    padding: 0 15vh 5vh;
+}
+
+.Sam {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Nouscontent div img {
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.Nouscontent p {
+    padding: 0;
+    margin: 2vh 0 2vh;
+    text-align: center;
+}
+
+.Photosenligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Photosenligne>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.Jo {
+    align-self: flex-end;
+}
+
+.Al {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 15%;
+}
+
+.Al p {
+    width: auto;
+    margin-top: 1vh;
+}
+
+/* ↓ code footer ↓ */
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    border-top: solid 3px white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.infoscontact p {
+    margin: 0;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+footer p,i {
+    color: white;
+    text-align: center;
+}
+
+.Icons {
+    font-size: 5vh;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    padding: 1%;
+    border: 0;
+}
+
+button {
+    cursor: pointer;
+}

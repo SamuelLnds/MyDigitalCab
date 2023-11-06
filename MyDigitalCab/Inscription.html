@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesforms.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>MDC Inscription</title>
+</head>
+<body>
+    <header>
+        <a href=".\index.html"><img src=".\Logo MDC.png" class="LogoHeader"></a>
+        <div class="BackgroundTop">
+            <a href=".\Inscription.html"><p>Se connecter</p></a>
+        </div>
+        <div class="FondLogo"></div>
+        <div class="FondMiddleLogo"></div>
+        <div class="FondOutsideLogo"></div>
+    </header>
+    <nav>
+        <div class="MenuNav">
+            <ul>
+                <div class="firstHalf">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="RéservationVTC.html">Réservation</a></li>
+                </div>
+                <div class="space"></div>
+                <div class="secondHalf">
+                    <li><a href="Tarifs.html">Tarifs</a></li>
+                    <li><a href="Quisommesnous.html">Qui sommes-nous ?</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="TraitSéparation"></div>
+    </nav>
+    <main>
+        <div class="formsContain">
+            <form action="" method="post">
+            <div class="Identifiant">
+                <label for="identifiant">Identifiant / adresse mail :</label>
+                <input type="text" name="identifiant" id="identifiant" required  placeholder="email@adresse.com ou identifiant">
+            </div>
+            <div class="Mdp">
+                <label for="mdp" id="mdp">Entrez votre mot de passe :</label>
+                <input type="password" name="mdp" id="mdp" minlength="3" required placeholder="Mot de passe (3 caractères minimum)">
+            </div>
+            <div class="MdpConfirm">
+                <label for="mdpcon" id="mdp">Confirmez le mot de passe :</label>
+                <input type="password" name="mdpcon" id="mdpcon" minlength="3" required placeholder="Confirmer votre mot de passe">
+            </div>
+            <button>Valider</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="col1">
+            <p>Nous contacter :</p>
+            <div class="Icons">
+                <a href=""><i class="uil uil-instagram"></i></a>
+                <a href=""><i class="uil uil-linkedin"></i></a>
+                <a href=""><i class="uil uil-facebook"></i></a>
+                <a href=""><i class="uil uil-envelope-alt"></i></a>
+                <a href=""><i class="uil uil-twitter"></i></a>
+            </div>
+            <div class="infos contact">
+            <a href="Contact.html"><p>Formulaire de contact</p></a>
+            <p>Tel : 01 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="col2">
+             <p>S'abonner à notre newsletter</p>
+             <form action="" method="post">
+                <input type="email" id="courriel" name="mail" size="40" required placeholder="email@adresse.com"> <br>
+                <button>S'inscrire</button>
+             </form>
+        </div>
+        <div class="col3">
+            <a href="mentions légales.html"><p>Mentions légales</p></a>
+            <a href="Politique de confidencialité.html"><p>Politique de confidentialité</p></a>
+            <p>© 2022 - MyDigitalCab.fr </p>
+        </div>
+    </footer>
+</body>
+</html>
